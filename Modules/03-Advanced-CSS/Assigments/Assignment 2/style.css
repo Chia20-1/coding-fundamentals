@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1%;
+  border: 5px gold solid;
+  border-radius: 25px;
+  background-color: rgb(216, 213, 213);
+  flex-direction: column;
+}
+
+.profile-picture img {
+  height: auto;
+  width: 40px;
+  border-radius: 50px;
+  background-color: aliceblue;
+}
+
+.customer-wrapper {
+  display: flex;
+  width: 80%;
+}
+
+.name-and-star-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: small;
+  font-weight: bolder;
+}
+
+.star-rating {
+  display: flex;
+}
+
+.star-rating img {
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 20px;
+  width: 20px;
+  align-items: center;
+}
+
+.review {
+  width: 85%;
+  height: auto;
+  margin-top: 5px;
+  font-size: x-small;
+}
+
+/* Media Query To Summarize All Beyong Mobile */
+
+@media (min-width: 640px) {
+  .profile-picture img {
+    height: auto;
+    width: 80px;
+    margin-right: 10px;
+  }
+
+  .name {
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+  .review {
+   font-size: medium;
+  }
+}
