@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.burger {
+  display: none;
+  height: 30px;
+  width: 30px;
+}
+
+.topnav {
+  display: flex;
+  background-color: #9dc08b;
+  justify-content: space-around;
+}
+
+.logo-and-name-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0.3em;
+}
+
+.logo-and-name-wrapper img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.topnav h1 {
+  font-size: medium;
+  margin-left: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.nav-menu-container {
+  display: flex;
+}
+
+nav li {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0.3em;
+}
+
+nav li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: x-small;
+  font-weight: bold;
+}
+
+nav li:hover {
+  transform: scale(0.95);
+}
+
+main article {
+  background-color: #edf1d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+main article .article-text-wrapper {
+  margin: auto 20px;
+}
+
+main article h2 {
+  padding-bottom: 10px;
+  font-size: large;
+}
+
+main article p {
+  font-size: small;
+  width: 200px;
+}
+
+main article img {
+  height: 300px;
+  width: auto;
+}
+
+.contact-me-form {
+  display: flex;
+}
+
+.contact-me-form-left {
+  margin: 0;
+  background-color: #40513b;
+  color: white;
+  width: 40%;
+  padding: 15px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.my-info {
+  margin-bottom: 15px;
+}
+
+.my-info h2 {
+  margin-bottom: 5px;
+}
+
+.phone {
+  margin-bottom: 3%;
+}
+
+
+.phone p {
+  margin-left: 5px;
+  font-size: xx-small;
+}
+
+.phone p::before {
+  content: "\f095";
+  font-family: FontAwesome;
+  margin-right: 0.5rem;
+}
+
+.email p {
+  margin-left: 5px;
+  font-size: xx-small;
+}
+
+.email p::before {
+  content: "\f0e0";
+  font-family: FontAwesome;
+  margin-right: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons li {
+  padding: 8px;
+  list-style-type: none;
+}
+
+.icons li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-me-form-right {
+  margin: 0;
+  background-color: white;
+  color: #40513b;
+  width: 60%;
+  padding: 15px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: small;
+}
+
+.contact-me-form-right h2 {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.first-name,
+.last-name,
+.email,
+.phone,
+.subject,
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-name,
+.last-name,
+.email,
+.phone {
+  width: 50%;
+}
+
+input,
+textarea,
+select {
+  padding: 2%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 5px;
+  resize: none;
+}
+
+input {
+  width: 90%;
+}
+
+.form-name,
+.form-contact,
+.form-subject,
+.form-message {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.form-name {
+  flex-direction: row;
+}
+
+.form-contact {
+  flex-direction: row;
+}
+
+.form-subject,
+.form-message {
+  flex-direction: column;
+}
+
+@media (max-width: 640px) {
+
+  .nav-menu-container {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    margin-right: 5%;
+    margin-top: 2.5%;
+  }
+
+  main article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .article-text-wrapper {
+    justify-content: center;
+  }
+
+  .article-text-wrapper p {
+    margin-bottom: 1em;
+  }
+
+  .article-image {
+    justify-content: center;
+  }
+
+  .contact-me-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-me-form-left {
+    width: 100%;
+  }
+
+  .my-info {
+    width: 90%;
+  }
+
+  .my-sub-info {
+    width: 90%;
+  }
+
+  .my-sub-info tr {
+    display: flex;
+  }
+
+  .icons {
+    width: 90%;
+  }
+
+  .contact-me-form-left {
+    width: fit-content;
+  }
+
+  .contact-me-form-left p {
+    width: fit-content;
+  }
+
+  .contact-me-form-right {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

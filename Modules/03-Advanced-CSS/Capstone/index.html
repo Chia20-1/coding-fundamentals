@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header class="topnav">
+        <div class="logo-and-name-wrapper">
+            <img src="https://yt3.googleusercontent.com/RDi-0Ym0RNcLRp2GSzR7H-a4AEzaxUFJEmCtfoRCTCj3sVd-hs_pH7MPfpZq8-OAIEkj8cu3Ow=s176-c-k-c0x00ffffff-no-rj"
+                alt="Logo">
+            <h1>Everyday Aquatics</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-menu-container">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Newsletters</a></li>
+                <li><a href="#">Become A Member</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div class="article-text-wrapper">
+                <h2>Get In Touch With Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deleniti officiis placeat. Atque
+                    corrupti
+                    quas magni molestiae explicabo. Excepturi, autem.</p>
+            </div>
+            <div class="article-image"><img
+                    src="https://images.pexels.com/photos/6497920/pexels-photo-6497920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""></div>
+        </article>
+
+        <section class="contact-me-form">
+            <div class="contact-me-form-left">
+                <div class="my-info">
+                    <h2>Contact Information</h2>
+                    <p>Everyd Aquatics is a collective group founded by a bunch of aquarium hobbist. Our main
+                        headquarter is at Kuala Lumpur, Malaysia.</p>
+                </div>
+                <table class="my-sub-info">
+                    <tr class="phone">
+                        <!-- <td><i class="fa-solid fa-phone"></i></td> -->
+                        <td>
+                            <p>+1(123)123-4567</p>
+                        </td>
+                    </tr>
+                    <tr class="email">
+                        <!-- <td><i class="fa-regular fa-envelope"></i></td> -->
+                        <td>
+                            <p>support@everydayaquatics.com</p>
+                        </td>
+                    </tr>
+                </table>
+                <div class="icons">
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                </div>
+            </div>
+            <div class="contact-me-form-right">
+                <form action="process.php" method="get">
+                    <h2>Send us a message</h2>
+                    <div class="form-name">
+                        <div class="first-name">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" required>
+                        </div>
+                        <div class="last-name">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-contact">
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="phone">
+                            <label for="phone-number">Phone</label>
+                            <input type="phone" name="phone-number" sup="Optional">
+                        </div>
+                    </div>
+                    <div class="form-subject">
+                        <label for="subject">Subject</label>
+                        <select name="subject" id="subject" required>
+                            <option value="feedback">Feedback</option>
+                            <option value="enquiry">Enquiry</option>
+                            <option value="sponsorship">Sponsorship</option>
+                            <option value="membership">Membership</option>
+                            <option value="membership">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-message">
+                        <label for="message" required>Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" maxlength="500"
+                            placeholder="Max 500 characters"></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
