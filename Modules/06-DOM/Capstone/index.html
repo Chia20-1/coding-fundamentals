@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="about.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo__container">
+            <a href="#">
+                <svg class="user__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </a>
+        </div>
+
+        <button class="mobile__navigation">
+            <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+
+        <nav class="navigation__container">
+            <ol class="navigation__links">
+                <li class="link__item">
+                    <span class="highlight">01.</span>
+                    <a class="link__name underline" href="/portfolio-website#about">About</a>
+                </li>
+                <li class="link__item">
+                    <span class="highlight">02.</span>
+                    <a class="link__name underline" href="/portfolio-website#experience">Experience</a>
+                </li>
+                <li class="link__item">
+                    <span class="highlight">03.</span>
+                    <a class="link__name underline" href="/portfolio-website#work">Work</a>
+                </li>
+                <li class="link__item">
+                    <span class="highlight">04.</span>
+                    <a class="link__name underline" href="/portfolio-website#contact">Contact</a>
+                </li>
+            </ol>
+            <div>
+                <a class="resume__link" href="/portfolio-website/resume.pdf">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home__section">
+            <h4 class="home__title">Hi, my name is</h4>
+            <h2 class="home__username">Lim Chia Chun</h2>
+            <h3 class="home__subtitle">I build things for the web.</h3>
+
+            <p class="home__description">
+                As a web developer, I design and develop websites using
+                <span class="highlight underline">HTML, CSS, and JavaScript</span>. I
+                collaborate with team members to
+                <span class="highlight underline">create and maintain websites</span>
+                that are user-friendly and visually appealing. I have a solid
+                understanding of web development principles and am committed to
+                staying up-to-date with
+                <span class="highlight underline"> industry trends and best practices</span>.
+            </p>
+
+            <div class="home__cta">
+                <a href="/portfolio-website/#contact" class="cta__link">Contact me !</a>
+            </div>
+        </section>
+
+        <section id="about" class="about__section">
+            <h2 class="about__title">
+                <span>01.</span>
+                About Me
+            </h2>
+            <div class="about__container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>Hello and welcome to my portfolio! My name is <span class="highlight underline">Lim Chia
+                                Chun</span>, and
+                            I am an entry-level developer with a
+                            passion for creating beautiful, functional websites and applications. I have always been
+                            interested in
+                            technology and how it can be used to <span class="highlight underline">solve problems and
+                                improve
+                                people's</span>
+                            lives. I decided to pursue a career in web development because I believe that it is a field
+                            where
+                            creativity and innovation can make a real difference.</p>
+
+                        <p>I believe that great websites and applications are more than just code. They are the result
+                            of careful
+                            planning, attention to detail, and a commitment to <span
+                                class="highlight underline">creating a positive
+                                user experience</span>. My goal is to
+                            create websites and applications that are not only beautiful and functional, but also
+                            user-friendly and
+                            intuitive.</p>
+
+                        <p>Here are a few technologies I've been working with recently</p>
+                    </div>
+
+                    <ul class="about__technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="about__image">
+                    <img src="Pika-pika.jfif" alt="Profile">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
