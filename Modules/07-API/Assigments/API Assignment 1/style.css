@@ -1,0 +1,38 @@
+.quote-container{
+    height: 200px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px grey solid;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+#quote-text {
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+#quote-author{
+    background-color: bisque;
+    width: 100%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+#quote-button{
+    background-color: rgb(33, 62, 230);
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    color:aliceblue;
+    box-shadow: none;
+}
+
+#quote-button::hover {
+    border: 2px solid #C5DFF8;
+}
