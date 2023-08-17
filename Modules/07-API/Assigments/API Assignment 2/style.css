@@ -1,0 +1,33 @@
+#profile__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: azure;
+    border: 2px solid gray;
+    height: 100px;
+}
+
+#profile__picture {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#profile__details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px;
+    width: 60%;
+}
+
+#profile__details >  * {
+    padding: 3px;
+}
