@@ -1,0 +1,7 @@
+.hide {
+    visibility: hidden;
+}
+
+#data__wrapper:first-child {
+    font-weight: bold;
+}
