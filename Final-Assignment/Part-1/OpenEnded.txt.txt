@@ -1,0 +1,60 @@
+1. Why do we need a loop? How do you write a basic for loop?
+
+    We need a loop to avoid writting repeated code such that we can
+specify how many times a stipulated code block will be run.
+
+    A basic way to write loop is a loop that takes place through index.
+For example, we have an array called: const pokemon = ["Charizard", "Pikachu", "Psyduck"].
+To print out the individual pokemon in the loop, we can loop through the index of the array.
+
+for (i = 0; i < 3; i++) {
+    console.log(pokemon[i]);
+}
+
+In this case, we have specify the task to print out each item in Pokemon through its index number.
+I have set the loop to loop 3 items based on the array.length.
+
+Additionally, we can use forEach() loop to loop through every item of the array
+if the index number is too large to count and we're certain that we want
+to loop a code block for all the items in the array.
+
+2. Difference between console.log() and return?
+
+Console.log() will print out the specifiy item within the bracket in the console.
+Return will returns a value from the function.
+Return will end a function immediately.
+
+For example:
+
+function sum(a,b){
+    return total = a + b;
+}
+
+If we ask it in the console: console.log(sum(1,2)), the console will reveal 3.
+
+3. What are truthy values? What are falsy values?
+
+This revolves around Boolean, whereas the output is either truth or false.
+False can be null, undefined, false, 0, "", NaN. The rest are truthy values.
+
+It serves the function to save a certain state as a variable. For example, 
+we can track if a task as isCompleted. It can be saved with either truthy or falsy.
+
+let isCompleted = false;
+
+That means the task isn't completed.
+
+4. How does the internet work?
+
+Computer connecting to each other. It can be client's computer connecting to a server/database.
+
+5. How does a website work? What files are involved?
+
+Accessing the website will be a client sending request to the seerver, and the server feedback a response.
+
+The file included:
+A) html: the layout/skeleton 
+B) css: the appearance/skin
+C) js: the function/ brain
+
+It may also involved database files like SQL or MongoDB and scripting file like php.

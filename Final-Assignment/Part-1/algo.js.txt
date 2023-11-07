@@ -1,0 +1,187 @@
+// I will write the answer only. Console.log testing is included.
+
+1. Code:
+
+function reverse(array) {
+    let result = []
+
+    for (let i = array.length - 1; i >= 0; i--) {
+        console.log("index tracking",i);
+        result.push(array[i]);
+        console.log("result checkpoint", result);
+    }
+
+    return result;
+}
+
+console.log("this is the result",reverse("abcde"))
+
+2. Pseudocode:
+
+1. Convert the string into array
+2. Compare the first element and last element of array with .shift() and .push(). 
+3. Loop the checking.
+4. If first element === last element is false, immediately return false;
+5. Keep the loop going until array length is less than 2. it still runs when equals to 2.
+
+Code:
+
+function sameBackAndForth(input) {
+    // Convert string to array
+    let array = input.split('')
+
+    // First layer check if array is odd or even
+    // Second layer check if array is an empty array
+
+    if (array.length === 0 || array.length % 2 !== 0) {
+        return "The array's length is odd number. Please input correct value."
+    }
+
+    while (array.length > 1) {
+        let firstEle = array.shift();
+        let lastEle = array.pop();
+        if (firstEle !== lastEle) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(sameBackAndForth("abba"))
+
+3.  Pseudoce:
+
+1. Check if the input is a number.
+2. A basic loop and pop() the last item into the result array.
+
+function reverseInt(input) {
+    // Check if input is a proper number
+    if (!Number.isInteger(input)) {
+        return "Please enter a proper integer.";
+    }
+
+    let result = [];
+    let array = input.toString().split('');
+
+    while (array.length > 0) {
+        result.push(array.pop());
+    }
+
+    return parseInt(result.join('')) * Math.sign(input);
+}
+
+console.log(reverseInt(15))
+
+4. Code:
+
+function sumArr(array) {
+    // Check if empty array
+    if (array.length === 0) {
+        return "Please enter a proper array.";
+    }
+
+    let sum = null;
+
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i]
+    }
+
+    return sum;
+}
+
+console.log(sumArr([1,2,3,4,5]) == 15);
+
+5. Code:
+
+function deafGrandma(input) {
+    // Convert string to array
+    let array = input.split(' ')
+    let output = []
+
+    for(let i=0; i<array.length; i++){
+        output.push(array[i].toUpperCase());
+    }
+
+   return output.join('!! ');
+}
+
+console.log(deafGrandma("I have a bad feeling about this"))
+
+6.
+
+let alphabetString = "abcdefghijklmnopqrstuvwxyz"
+let alphabetArray = alphabetString.split("")
+
+function whatIsMissing(input) {
+    // Convert string to array
+    let inputArray = input.split('')
+
+    // Find the start and end index of the range in the alphabet
+    let startIndex = alphabetArray.indexOf(inputArray[0]);
+    let endIndex = alphabetArray.indexOf(inputArray[inputArray.length - 1]);
+
+    // Cut out the range that need to filter
+    let range = alphabetArray.slice(startIndex, endIndex + 1);
+
+    // Find the answer
+    let missingLetters = range.filter(checkLetter)
+
+    function checkLetter(letter) {
+        return !inputArray.includes(letter)
+    }
+
+    if(missingLetters.length == 0){
+        return undefined;
+    }
+
+    return missingLetters;
+}
+
+7. Code:
+
+function swap(sentence, error, correction) {
+  // Convert string to array
+  let sentenceArray = sentence.split(' ')
+  let errorArray = error.split('')
+  let correctionArray = correction.split('')
+  console.log("sentence array", sentenceArray)
+  console.log("error array", errorArray)
+  console.log("correction array", correctionArray)
+  console.log("test correction array index 0:", correctionArray[0])
+  console.log("test errory array index 0:", errorArray[0])
+
+  // Always match the first letter of correction to error's format
+  if (errorArray[0] === errorArray[0].toUpperCase()) {
+    correctionArray[0] = correctionArray[0].toUpperCase();
+  } else {
+    correctionArray[0] = correctionArray[0].toLowerCase();
+  }
+
+  // Join the correction array back into a word
+  correction = correctionArray.join("");
+
+  // Find the error word in sentence
+  let errorIndex = sentenceArray.indexOf(error);
+  console.log("error index", errorIndex)
+
+  // Replace error word with correction word
+  sentenceArray.splice(errorIndex, 1, correction);
+
+  // Fill in the full stop
+  sentenceArray.push(".");
+
+  // Change sentenceArray back to string
+  const answer = sentenceArray.join(" ")
+
+  console.log("answer", answer)
+
+  // Update the sentence
+  sentence = answer;
+
+  // Print out sentence only
+  return sentence;
+}
+
+console.log(swap("His name is Tom", "Tom", "john"))
+
